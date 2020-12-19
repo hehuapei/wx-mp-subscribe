@@ -1,0 +1,4 @@
+<button class="bottom-btn" bindtap='subscribe'>
+  <image class="subscribe" src="./static/subscribe.svg"></image>
+  订阅后可及时收到红包领取提醒哦！
+</button>

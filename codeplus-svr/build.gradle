@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${SPRINGBOOT}")
+    }
+}
+
+subprojects {
+    group 'com.lonntec'
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        testCompile ("junit:junit:${JUNIT}")
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

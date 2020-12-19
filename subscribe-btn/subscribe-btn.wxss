@@ -1,0 +1,18 @@
+.bottom-btn {
+  background: #fff;
+  width: 100%;
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  bottom: 0;
+  justify-content: center;
+  position: fixed;
+  display: flex;
+  font-size: 26rpx;
+}
+
+.bottom-btn .subscribe {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin: 6rpx 10rpx 0 0;
+}
